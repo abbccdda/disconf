@@ -4,7 +4,7 @@ install:
 test_script:
   - mvn test 
 
-after_success:
+after_test:
   - mvn clean cobertura:cobertura coveralls:report
 
 build: off
