@@ -1,0 +1,10 @@
+install:
+  - mvn clean install
+
+test_script:
+  - mvn test 
+
+after_success:
+  - mvn clean cobertura:cobertura coveralls:report
+
+build: off
