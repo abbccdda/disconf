@@ -5,6 +5,9 @@ test_script:
   - mvn test 
 
 after_test:
-  - mvn clean cobertura:cobertura coveralls:report
+  - mvn clean
+
+cache:
+  - 'C:\Users\%USERNAME%\.m2\repository'
 
 build: off
